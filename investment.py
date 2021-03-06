@@ -1,3 +1,6 @@
+"""
+the method to calculate the value after one year
+"""
 def calculate_apr(principal, interest_rate, years):
     i = 1
     value = 0.0
@@ -7,6 +10,7 @@ def calculate_apr(principal, interest_rate, years):
     return value
 
 while True:
+#if the user enter invalid output then turn False, otherwise calculate the value after one year 
     try:
         principal = int(input('Enter principal: '))
         interest_rate = float(input('Enter interest rate: '))
